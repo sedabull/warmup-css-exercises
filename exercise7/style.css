@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: fit-content;
+    margin: 0px auto;
+    padding-left: 110px;
+}
+
+.interior {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.interior::before {
+    position: absolute;
+    top: 0px;
+    right: 220px;
+    opacity: 25%;
+    content: url(./blank.png);
+    background-color: inherit;
+    width: 100px;
+    height: 100px;
+}
+
+.interior::after {
+    position: absolute;
+    top: 0px;
+    right: 110px;
+    opacity: 50%;
+    content: url(./blank.png);
+    background-color: inherit;
+    width: 100px;
+    height: 100px;
+}
+
+.div1 {
+    background-color: red;
+}
+
+.div2 {
+    background-color: orange;
+}
+
+.div3 {
+    background-color: yellow;
+}
+
+.div4 {
+    background-color: blue;
+}
+
+.div5 {
+    background-color: pink;
+}
